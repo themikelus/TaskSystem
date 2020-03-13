@@ -13,5 +13,4 @@
 
 ## Running
 
-3. mvn package
-4. java -jar target/taskdemo-0.0.1-SNAPSHOT.jar
+3. mvn spring-boot:run
