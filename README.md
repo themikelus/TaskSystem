@@ -11,9 +11,13 @@
 1. git clone
 2. cd TaskSystem
 
-## Running
+## Running tests
 
-3. mvn spring-boot:run
+3. mvn test
+
+## Running app
+
+4. mvn spring-boot:run
 
 ## REST API Endpoints
 
