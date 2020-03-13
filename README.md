@@ -14,3 +14,20 @@
 ## Running
 
 3. mvn spring-boot:run
+
+## REST API Endpoints
+
+#### Create task
+curl --location --request POST 'http://DOMAIN:PORT/tasks' --header 'Content-Type: application/json' --data-raw '{"name": "New task name", "description":"New task description"}'
+
+#### Get all tasks
+curl --location --request GET 'http://DOMAIN:PORT/tasks'
+
+#### Get task
+curl --location --request GET 'http://DOMAIN:PORT/tasks/1'
+
+#### Update task
+curl --location --request PATCH 'http://DOMAIN:PORT/tasks/1' --header 'Content-Type: application/json' --data-raw '{"status": "DONE"}'
+
+#### Delete task
+curl --location --request DELETE 'http://DOMAIN:PORT/tasks/1' --header 'Content-Type: application/json' --data-raw ''
